@@ -2,9 +2,13 @@ import React from "react"
 import styled from "styled-components";
 
 const FooterContainer = styled.footer`
-    background: #F4F6F7;
+    background: #F7F9F9;
     text-align: center;
-    padding: 0.45rem 0rem;
+    position: initial;
+    padding: 18px;
+    width: 100%;
+    bottom: 0px;
+
 `;
 
 const Copyright = styled.h5`
@@ -100,13 +104,7 @@ class Footer extends React.Component {
                         />
                     </IconLink>
                 </SocialIcons>
-                <Copyright
-                    style={
-                        this.props.backgroundIsBlack
-                            ? { color: "white" }
-                            : { color: "black" }
-                    }
-                >
+                <Copyright>
                     © Weerasak Ratchawangmueang – {new Date().getFullYear()}
                 </Copyright>
             </FooterContainer>
